@@ -1,0 +1,64 @@
+﻿@model PamelaProjeto.Models.Funcionario
+
+@{
+    ViewBag.Title = "Detalhes de um funcionário";
+}
+
+<h2>Detalhes de um funcionário</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sexo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PIS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PIS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Salario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Salario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataAdmissao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataAdmissao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Alterar", "Edit", new { id = Model.CPF }) |
+    @Html.ActionLink("Voltar para consulta", "Index")
+</p>
